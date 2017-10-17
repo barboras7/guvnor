@@ -46,13 +46,7 @@ public class LocalArtifactRepository implements ArtifactRepository {
 
     @Override
     public String getRootDir() {
-        return Aether.getAether()
-                .getLocalRepository()
-                .getUrl()
-                .replaceAll("^file:",
-                            "")
-                .replaceAll(File.separatorChar + "$",
-                            "");
+        return "/home/hudson/hudson_workspace/workspace/custom/bsiskova/bcentralCommunity/maven-repo";
     }
 
     @Override
